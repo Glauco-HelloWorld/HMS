@@ -27,5 +27,8 @@ public class SampleInteraction {
         // see the calendar for January for single rooms
 		System.out.println(hm.getCalendar("January", h));
 		
+		System.out.println("Glauco gay");
+		
+		
 	}
 }
