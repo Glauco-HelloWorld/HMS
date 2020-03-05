@@ -55,6 +55,8 @@ public class Hotel implements HotelInterface {
 	public void setRooms(List<RoomInterface> rooms) {
 		// TODO Auto-generated method stub
 		
+		
+		
 	}
 
 	@Override
@@ -93,7 +95,7 @@ public class Hotel implements HotelInterface {
 	@Override
 	public boolean bookRoom(String month, int day, String type, int lengthOfStay) {
 		// TODO Auto-generated method stub
-	
+	System.out.println("This Room " + type + " was booked for " + lengthOfStay + " days on " + day + " of " + month );
 		
 		return bookRoom;
 	}

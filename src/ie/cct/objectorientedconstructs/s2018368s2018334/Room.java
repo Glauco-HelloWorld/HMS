@@ -61,18 +61,21 @@ public class Room implements RoomInterface {
 
 	@Override
 	public boolean isAvailable(String month, int day) {
-		// TODO Auto-generated method stub
-		
-		if ( Type == month) {
-	     avaiability = true;
-		System.out.println("It's available");
 		
 		
-		}else {
-		avaiability = false;
-		System.out.println("It's not available");
 		
-		}
+		
+		
+//		if ( Type == month) {
+//	     avaiability = true;
+//		System.out.println("It's available");
+//		
+//		
+//		}else {
+//		avaiability = false;
+//		System.out.println("It's not available");
+//		
+//		}
 	
 		return avaiability;
 	}
