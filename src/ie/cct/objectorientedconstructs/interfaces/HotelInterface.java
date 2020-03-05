@@ -1,5 +1,6 @@
 package ie.cct.objectorientedconstructs.interfaces;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -8,6 +9,7 @@ import java.util.List;
  * This is one of the interfaces you need to implement
  *
  * @author ONE of you needs to take responsibility for this, whoever it is, put your student number here
+ * JeanCastro_2018368
  */
 public interface HotelInterface {
 	
