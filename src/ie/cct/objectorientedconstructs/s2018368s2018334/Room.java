@@ -12,6 +12,16 @@ public class Room implements RoomInterface {
 	protected int Id;
 	private Map<String, Boolean>[] availability;
 	protected boolean isAvailable;
+	
+	
+	public Room(String type, double rate, int id, Map<String, Boolean>[] availability, boolean isAvailable) {
+		super();
+		this.Type = Type;
+		this.Rate = Rate;
+		this.Id = Id;
+		this.availability = availability;
+		this.isAvailable = isAvailable;
+	}
 
 	@Override
 	public String getType() {
