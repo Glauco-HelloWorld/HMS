@@ -1,5 +1,6 @@
 package ie.cct.objectorientedconstructs.s2018368s2018334;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import ie.cct.objectorientedconstructs.interfaces.RoomInterface;
@@ -9,7 +10,8 @@ public class Room implements RoomInterface {
 	protected String Type;
 	protected double Rate;
 	protected int Id;
-	protected boolean avaiability;
+	private Map<String, Boolean>[] availability;
+	protected boolean isAvailable;
 
 	@Override
 	public String getType() {
@@ -33,11 +35,16 @@ public class Room implements RoomInterface {
 
 	@Override
 	public void setRate(double rate) {
+		
+		
 	}
 
 	@Override
 	public Map<String, boolean[]> getAvailability() {
 		// TODO Auto-generated method stub
+	
+		
+		
 		return null;
 	}
 
@@ -56,18 +63,8 @@ public class Room implements RoomInterface {
 	@Override
 	public boolean isAvailable(String month, int day) {
 		
-//		if ( Type == month) {
-//	     avaiability = true;
-//		System.out.println("It's available");
-//		
-//		
-//		}else {
-//		avaiability = false;
-//		System.out.println("It's not available");
-//		
-//		}
-	
-		return avaiability;
+
+		return false;
 	}
 
 	@Override

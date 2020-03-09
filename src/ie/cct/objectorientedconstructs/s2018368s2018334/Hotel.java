@@ -1,6 +1,11 @@
 package ie.cct.objectorientedconstructs.s2018368s2018334;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import ie.cct.objectorientedconstructs.interfaces.HotelInterface;
 import ie.cct.objectorientedconstructs.interfaces.RoomInterface;
@@ -8,48 +13,38 @@ import ie.cct.objectorientedconstructs.interfaces.RoomInterface;
 public class Hotel implements HotelInterface {
 	
 	
-	protected String Single;
-	protected String Double;
-	protected String Penthouse;
+	
 	protected String Name = "Mespil";
-	protected boolean checkAvailability;
-	protected int RoomAvailable;
-	protected boolean bookRoom;
+	
 
-	public String getSingle() {
-		return Single;
-	}
 
-	public void setSingle(String single) {
-		Single = single;
+	public Hotel ( String name) {
+		
+		this.Name = Name;
+		//ArrayList<String> myRooms = new ArrayList<String>();
+		
+	
 	}
-
-	public String getDouble() {
-		return Double;
-	}
-
-	public void setDouble(String d) {
-		Double = d;
-	}
-
-	public String getPenthouse() {
-		return Penthouse;
-	}
-
-	public void setPenthouse(String penthouse) {
-		Penthouse = penthouse;
-	}
+	
+	
+	
 
 	@Override
 	public List<RoomInterface> getRooms() {
 		// TODO Auto-generated method stub
+		
+	      Map<String, RoomInterface> myMap = new HashMap<String,RoomInterface>();
+         
+    
+		
+		
 		return null;
 	}
 
 	@Override
 	public void setRooms(List<RoomInterface> rooms) {
 		// TODO Auto-generated method stub
-		
+
 		
 	}
 
@@ -70,7 +65,7 @@ public class Hotel implements HotelInterface {
 		// TODO Auto-generated method stub
 		
 
-		return checkAvailability;
+		return false;
 	}
 
 	@Override
@@ -78,14 +73,15 @@ public class Hotel implements HotelInterface {
 		// TODO Auto-generated method stub
 		
 		
-		return RoomAvailable;
+		return 0;
 	}
 
 	@Override
 	public int getNumberOfRooms() {
+		return 0;
 		// TODO Auto-generated method stub\
 	  
-        return RoomAvailable;
+      
 	}
 
 	@Override
@@ -98,7 +94,7 @@ public class Hotel implements HotelInterface {
 		
 	System.out.println("This Room " + type + " was booked for " + lengthOfStay + " days on " + day + " of " + month );
 		
-		return bookRoom;
+		return false;
 	}
 
 }
