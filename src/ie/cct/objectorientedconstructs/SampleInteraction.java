@@ -3,12 +3,14 @@ package ie.cct.objectorientedconstructs;
 import ie.cct.objectorientedconstructs.interfaces.HotelInterface;
 import ie.cct.objectorientedconstructs.interfaces.HotelManagementSystemInterface;
 
+import java.io.IOException;
+
 //change this to match your project package
 import ie.cct.objectorientedconstructs.HotelManagementSystem;
 
 public class SampleInteraction {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
     
 		// create a new hotel management system
 		HotelManagementSystemInterface hm = new HotelManagementSystem();
@@ -25,7 +27,7 @@ public class SampleInteraction {
 		h.bookRoom("February", 10, "Penthouse", 12);
 		
         // see the calendar for January for single rooms
-		System.out.println(hm.getCalendar("January", h));
+		System.out.println(h);
 		
 		
 		

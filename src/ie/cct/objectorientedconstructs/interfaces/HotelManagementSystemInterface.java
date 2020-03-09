@@ -1,5 +1,7 @@
 package ie.cct.objectorientedconstructs.interfaces;
 
+import java.io.IOException;
+
 /**
  *
  * This is one of the interfaces you need to implement
@@ -38,7 +40,8 @@ public interface HotelManagementSystemInterface {
 	 * 
 	 * @return an instance of the hotel class, which should 
 	 * 		   implement the HotelInterface 
+	 * @throws IOException 
 	 */
-	public HotelInterface setupHotel(String file);
+	public HotelInterface setupHotel(String file) throws IOException;
 	
 }
