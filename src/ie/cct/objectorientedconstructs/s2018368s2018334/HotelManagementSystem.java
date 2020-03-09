@@ -6,9 +6,6 @@ import ie.cct.objectorientedconstructs.interfaces.HotelInterface;
 import ie.cct.objectorientedconstructs.interfaces.HotelManagementSystemInterface;
 
 public class HotelManagementSystem implements HotelManagementSystemInterface{
-
-	
-	
 	
 	@Override
 	public String getCalendar(String month, HotelInterface hotel) {
@@ -19,10 +16,6 @@ public class HotelManagementSystem implements HotelManagementSystemInterface{
 	@Override
 	public HotelInterface setupHotel(String file) {
 
-		
-
-
-	
 		return this.setupHotel(file);
 	}
 

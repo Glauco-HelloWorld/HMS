@@ -16,11 +16,6 @@ public class Hotel implements HotelInterface {
 	protected int RoomAvailable;
 	protected boolean bookRoom;
 
-	
-	
-	
-	
-
 	public String getSingle() {
 		return Single;
 	}
@@ -54,7 +49,6 @@ public class Hotel implements HotelInterface {
 	@Override
 	public void setRooms(List<RoomInterface> rooms) {
 		// TODO Auto-generated method stub
-		
 		
 		
 	}

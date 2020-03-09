@@ -6,7 +6,6 @@ import ie.cct.objectorientedconstructs.interfaces.RoomInterface;
 
 public class Room implements RoomInterface {
 	
-	
 	protected String Type;
 	protected double Rate;
 	protected int Id;
@@ -23,7 +22,6 @@ public class Room implements RoomInterface {
 		// TODO Auto-generated method stub
 	
 		System.out.println(type);
-		
 	}
 
 	@Override
@@ -35,9 +33,6 @@ public class Room implements RoomInterface {
 
 	@Override
 	public void setRate(double rate) {
-	
-      
-		
 	}
 
 	@Override
@@ -49,7 +44,6 @@ public class Room implements RoomInterface {
 	@Override
 	public void setAvailability(Map<String, boolean[]> availability) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
@@ -61,10 +55,6 @@ public class Room implements RoomInterface {
 
 	@Override
 	public boolean isAvailable(String month, int day) {
-		
-		
-		
-		
 		
 //		if ( Type == month) {
 //	     avaiability = true;
