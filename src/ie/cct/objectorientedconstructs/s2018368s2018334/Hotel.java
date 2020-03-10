@@ -1,6 +1,5 @@
 package ie.cct.objectorientedconstructs.s2018368s2018334;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -21,7 +20,6 @@ public class Hotel implements HotelInterface {
 	public Hotel ( String name) {
 		
 		this.Name = Name;
-		//ArrayList<String> myRooms = new ArrayList<String>();
 		
 	
 	}
@@ -32,9 +30,6 @@ public class Hotel implements HotelInterface {
 	@Override
 	public List<RoomInterface> getRooms() {
 		// TODO Auto-generated method stub
-		
-	      Map<String, RoomInterface> myMap = new HashMap<String,RoomInterface>();
-         
     
 		
 		
