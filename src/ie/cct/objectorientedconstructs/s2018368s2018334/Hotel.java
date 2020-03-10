@@ -13,13 +13,15 @@ public class Hotel implements HotelInterface {
 	
 	
 	
-	protected String Name = "Mespil";
+	private String Name = "Mespil";
+	private List<RoomInterface> rooms;
 	
 
 
-	public Hotel ( String name) {
+	public Hotel ( String name, List<RoomInterface> rooms) {
 		
 		this.Name = Name;
+		this.rooms = rooms;
 		
 	
 	}
@@ -33,7 +35,7 @@ public class Hotel implements HotelInterface {
     
 		
 		
-		return null;
+		return rooms;
 	}
 
 	@Override
@@ -41,24 +43,45 @@ public class Hotel implements HotelInterface {
 		// TODO Auto-generated method stub
 
 		
+		this.rooms=rooms;
+		
 	}
 
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return Name;
+		return this.Name;
 	}
 
 	@Override
 	public void setName(String name) {
 		// TODO Auto-generated method stub
-	 name = this.Name;
+	this.Name = name;
 	}
 
 	@Override
 	public boolean checkAvailability(String month, int day, String type, int lengthOfStay) {
 		// TODO Auto-generated method stub
-		
+	
+		for(RoomInterface room : rooms) {	
+			
+			if (room.getType().equals(type)) {
+				int finalday = day + lengthOfStay;
+				
+				
+				do {
+					 if( !room.isAvailable(month, day)) {
+					 
+						  return false;
+						  
+						  
+					  }
+					day++;
+					
+				} while ( day <= finalday);
+					return true;
+			}			
+		}
 
 		return false;
 	}
@@ -66,6 +89,12 @@ public class Hotel implements HotelInterface {
 	@Override
 	public int getRoomAvailable(String month, int day, String type, int lengthOfStay) {
 		// TODO Auto-generated method stub
+		
+		
+		
+		
+		
+		
 		
 		
 		return 0;
